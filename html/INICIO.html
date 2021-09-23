@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+      <link href="../css/inicio2.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h5> INFORMAÇÕES PESSOAIS</h5>
+        <form class="row g-3" method="POST" action="../php/cadastrar.php">
+        <div class="col-md-6">
+            <label for="text"> Nome completo</label>
+            <input type="text" class="form-control" name="NomeCompleto" id="Nome" placeholder="Digite seu Nome completo" required>
+        </div>
+        <br>
+
+        <div class="col-md-4">
+            <label for="text"> Usuario</label>
+            <input type="text" class="form-control" name="Usuario" id="usuario" placeholder="@usuario" required>
+        </div>
+        <br>
+
+        <div class="col-md-6">
+            <label for="text">Email</label>
+            <input type="text" class="form-control" name="Email" id="email" placeholder="Digite seu email" required>
+        </div>
+        <br>
+
+        <div class="col-md-4">
+            <label for="password">Senha</label>
+            <input type="password" class="form-control" name="Senha" id="senha" placeholder="Digite sua senha" required>
+        </div>
+        <br>
+
+        <div class="col-md-4">
+            <label for="password">Confirme sua senha</label>
+            <input type="password" class="form-control" name="ConfirmeSuaSenha" id="senha" placeholder="Confirme sua senha" required>
+        </div>
+        <br>
+        <div class="col-md-2">
+            <label for="gêneros">Gêneros</label>
+            <select class="form-select" name="Genero" aria-label="Default select example">
+                <option value="1">Feminino</option>
+                <option value="2">Masculino</option>
+                <option value="3">Outros</option>
+            </select>
+        </div>
+        <br>
+        <div class="col-md-2">
+            <label for="date">Data de nascimento</label>
+            <input type="date" class="form-control" name="DataDeNascimento" id="data" required>
+        </div>
+        <br>
+        <div class="col-md-2">
+            <label for="number">CPF</label>
+            <input type="number" class="form-control" name="CPF" id="CPF" placeholder="Insira seu CPF" required>
+        </div>
+        <br>
+
+        <div class="col-md-4">
+            <label for="Telefone">Numero de telefone</label>
+            <input type="Tel" class="form-control" name="NumeroDeTelefone" id="Telefone" placeholder="Digite seu telefone" required>
+        </div>
+        <br>
+        <div class="col-md-2">
+            <label for="text">UF</label>
+            <input type="text" class="form-control" name="UF" id="UF" placeholder="Digite seu estado" required>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <label for="text">Cidade</label>
+            <input type="text" class="form-control" name="Cidade" id="cidade" placeholder="Digite sua cidade" required>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <label for="text">Logradouro</label>
+            <input type="text" class="form-control" name="Logradouro" id="Rua" placeholder="Digite seu Logradouro" required>
+        </div>
+        <br>
+        <div class="col-md-2">
+            <label for="number">Número</label>
+            <input type="number" class="form-control" name="Numero" id="Numero" placeholder="Digite seu numero" required>
+        </div>
+        <br>
+        <div class="col-md-4">
+            <label for="text">Complemento</label>
+            <input type="text" class="form-control" name="Complemento" id="complemento" placeholder="Casa, bloco, apart, etc..." required>
+        </div>
+        <br>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+        <br>
+        </form>
+    </div>
+</body>
+
+</html>
